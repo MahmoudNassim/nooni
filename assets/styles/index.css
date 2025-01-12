@@ -1,0 +1,57 @@
+.fs-12 {
+  font-size: 12px;
+}
+.pgh-m-b {
+  margin-bottom: 0;
+}
+.shop-now {
+  color: white;
+  transition: 200ms ease-in;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.shop-now:hover {
+  color: rgba(132, 132, 132, 1);
+  border-bottom: 1px solid rgba(132, 132, 132, 1);
+}
+.p-header {
+  padding: 9px 20px 9px 0;
+}
+.header {
+  background-color: #f2f2f2;
+  padding: 15px 0;
+}
+a {
+  padding: 10px;
+}
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+.ml12 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
