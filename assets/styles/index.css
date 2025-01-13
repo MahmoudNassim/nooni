@@ -4,6 +4,9 @@
 .pgh-m-b {
   margin-bottom: 0;
 }
+p {
+  color: black;
+}
 .shop-now {
   color: white;
   transition: 200ms ease-in;
@@ -18,40 +21,60 @@
   padding: 9px 20px 9px 0;
 }
 .header {
-  background-color: #f2f2f2;
   padding: 15px 0;
 }
 a {
   padding: 10px;
 }
-.ml10 {
-  position: relative;
-  font-weight: 900;
-  font-size: 4em;
+.first-slide,
+.second-slide {
+  line-height: 1.1;
+  font-weight: bold;
+}
+.text-wrapper h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 0.2rem;
 }
 
-.ml10 .text-wrapper {
-  position: relative;
+.letter {
   display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
+  transform-style: preserve-3d;
+}
+.same-animation {
+  display: inline-block;
+}
+.text-wrapper {
+  display: block;
   overflow: hidden;
+  letter-spacing: 0; /* error in style when you put .5 rem*/
 }
-
-.ml10 .letter {
+.line {
   display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
+  padding: 0;
 }
-.ml12 {
-  position: relative;
-  font-weight: 900;
-  font-size: 4em;
+.free-ship {
+  color: black;
+  font-weight: bold;
 }
-
-.ml12 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .text-wrapper h1 {
+    font-size: 25px;
+  }
+  .sliders p {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .text-wrapper h1 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 13px;
+    margin: 0;
+  }
 }
