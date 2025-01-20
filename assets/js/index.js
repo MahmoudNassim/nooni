@@ -1,50 +1,16 @@
-var firstTopTextWrapper = document.querySelector(".first-slide .letters");
-firstTopTextWrapper.innerHTML = firstTopTextWrapper.textContent.replace(
+// Wrap every letter in a span
+var textWrapper = document.querySelector(".text .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
   "<span class='letter'>$&</span>"
 );
 
-var firstBottomTextWrapper = document.querySelector(".second-slide .letters");
-firstBottomTextWrapper.innerHTML = firstBottomTextWrapper.textContent.replace(
-  /\S/g,
-  "<span class='letter'>$&</span>"
-);
-
-
-var sameAnimationWrappers = document.querySelectorAll(
-  ".same-animation .letters"
-);
-sameAnimationWrappers.forEach((wrapper) => {
-  wrapper.innerHTML = wrapper.textContent.replace(
-    /\S/g,
-    "<span class='letter'>$&</span>"
-  );
-});
-
-anime.timeline().add({
-  targets: ".first-slide .letter",
-  opacity: [0, 1],
-  translateX: [40, 0.5],
-  easing: "easeInOutBack",
-  duration: 500,
-  delay: (el, i) => 30 * i,
-});
-
-anime.timeline().add({
-  targets: ".second-slide .letter",
-  opacity: [0, 1],
-  translateX: [-40, -0.5],
-  easing: "easeInOutBack",
-  duration: 500,
-  delay: (el, i) => 30 * i,
-});
-
-sameAnimationWrappers.forEach((wrapper) => {
-  anime.timeline().add({
-    targets: wrapper.querySelectorAll(".letter"),
-    opacity: [0, 1],
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".text .letters",
     rotateY: [-90, 0],
-    duration: 1300,
+    duration: 1500,
     delay: (el, i) => 45 * i,
-  });
-});
+  })
+

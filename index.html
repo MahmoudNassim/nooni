@@ -25,10 +25,10 @@
             <!-- Start Above Header -->
             <div class="above-header col-12 bg-black p-0">
                 <div
-                    class="content container fs-12 text-white d-flex justify-content-between align-items-center">
+                    class="content container text-white d-flex justify-content-between align-items-center ps-0 pe-0 pt-2 pb-2">
                     <div
-                        class="left p-header  col-12 col-lg-6 col-md-6 d-flex justify-content-center justify-content-lg-start justify-content-md-start">
-                        <p class="pgh-m-b text-white">Up to 40% off
+                        class="left p-header col-12 col-lg-7 col-md-7 d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                        <p class="pgh-m-b text-white ">Up to 40% off
                             Best-Selling Furniture.
                             <a
                                 id="shop-now" href="#"
@@ -36,22 +36,88 @@
                                 NOW</a></p>
                     </div>
                     <div class="right d-lg-flex d-md-flex   gap-4 d-none  ">
-                        <p  class="pgh-m-b text-white" id="english">English</p>
-                        <p   class="pgh-m-b text-white" id="usd">USD</p>
+                        <p class="pgh-m-b text-white" id="english">English</p>
+                        <p class="pgh-m-b text-white" id="usd">USD</p>
                     </div>
                 </div>
             </div>
             <!-- End Above Header -->
             <!-- Start Header  -->
-            <header class="header ">
+            <header class="pt-5 pb-5 ">
                 <div
-                    class="header-con container col-12 d-flex justify-content-between align-items-center pb-lg-5 pb-md-5 ps-0 pe-0">
-                    <div class="actionsDiv col-3 d-flex align-items-center">
-                        <a href>
+                    class=" container col-12 d-flex justify-content-lg-between justify-content-md-between justify-content-around align-items-center p-0">
+                    <div
+                        class="actionsDiv col-3 d-flex align-items-center gap-2 gap-lg-4 gap-md-4">
+                        <!-- Start offCanvas -->
+                        <a data-bs-toggle="offcanvas"
+                            href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
                             <img src="./assets/images/burger-bar.png" alt
                                 height="25"
                                 width="25">
                         </a>
+                        <div class="offcanvas offcanvas-start" tabindex="-1"
+                            id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div
+                                class="offcanvas-header d-flex d-md-block d-lg-block justify-content-center">
+                                <div
+                                    class=" d-lg-none d-md-none d-block">
+                                    <img src="./assets/images/logo.png" alt
+                                        height="20">
+                                </div>
+                                <button type="button"
+                                    class="btn-close d-lg-block d-md-block d-none"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div
+                                class="offcanvas-body d-flex flex-column  pe-3 p-lg-5 p-md-5 ">
+                                <div class=" d-flex flex-column">
+                                    <div
+                                        class="side d-flex justify-content-between align-items-center">
+                                        <a class=" home  p-3 fs-4"
+                                            href="#home">Home</a>
+                                        <span>></span>
+                                    </div>
+                                    <div
+                                        class="side d-flex justify-content-between align-items-center">
+                                        <a class=" home  p-3 fs-4"
+                                            href="./pages/shop.html">Shop</a>
+                                        <span>></span>
+                                    </div>
+                                    <div
+                                        class="side d-flex justify-content-between align-items-center">
+                                        <a class=" home  p-3 fs-4"
+                                            href="./pages/product.html">Product</a>
+                                        <span>></span>
+                                    </div>
+                                    <div
+                                        class="side d-flex justify-content-between align-items-center">
+                                        <a class=" home  p-3 fs-4"
+                                            href="./pages/">Blog</a>
+                                        <span>></span>
+                                    </div>
+                                    <a class=" home  p-3 fs-4"
+                                        href="./pages/about.html">About us</a>
+                                    <a class=" home  p-3 fs-4"
+                                        href="./pages/contact.html">Contact
+                                        us</a>
+                                </div>
+                            </div>
+                            <footer
+                                class="bg-black p-3 gap-2 d-block d-lg-none d-md-none">
+                                <div class=" d-flex  gap-3">
+                                    <p class="pgh-m-b text-white"
+                                        id="english">English</p>
+                                    <p class="pgh-m-b text-white"
+                                        id="usd">USD</p>
+                                </div>
+                                <p class="text-white">Login/Register</p>
+                            </footer>
+
+                        </div>
+                        <!-- End offCanvas -->
                         <a href><img src="./assets/images/search.png" alt
                                 height="25"
                                 width="25"></a>
@@ -61,7 +127,7 @@
                         <img src="./assets/images/logo.png" alt height="27">
                     </div>
                     <div
-                        class="leading col-3 d-flex align-items-center justify-content-end gap-0 gap-lg-2">
+                        class="leading col-3 d-flex align-items-center justify-content-end gap-2 gap-lg-4 gap-md-4">
                         <a class="d-none d-md-flex d-lg-flex " href><img
                                 src="./assets/images/user.png" alt
                                 height="25"></a>
@@ -75,170 +141,90 @@
                 </div>
             </header>
             <!-- End Header  -->
-            <!-- Start carousel -->
+            <!-- Start Carousel -->
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators m-0">
-                    <button style="border-radius: 50%; height: 20px; width:20px;" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide-to="0" class="active" aria-current="true"
-                        aria-label="Slide 1"></button>
-                    <button style="border-radius: 50%; height: 20px; width:20px;" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button style="border-radius: 50%; height: 20px; width:20px;" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner container">
-                    <div class="carousel-item active">
-                        <div class="parent d-flex flex-column flex-md-row gap-4">
+                <div class="container p-0">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active"
+                            data-bs-interval="10000">
                             <div
-                                class="letters-con d-flex flex-column col-lg-6 col-md-6 col-12 justify-content-center ">
-                                <!-- NEW ARRIVAL -->
-                                <div class="same-animation">
-                                    <p class="text-wrapper line  ">
-                                        <span class="letters">NEW ARRIVAL</span>
-                                    </p>
+                                class="d-flex align-items-center flex-md-row flex-column gap-2">
+                                <div
+                                    class="text d-flex flex-column align-items-center align-items-md-start justify-content-md-center d-md-flex col-md-6 ">
+                                    <p>NEW ARRIVALS</p>
+                                    <h1 class="h-slide letters ">Chairs & Seating</h1>
+                                    <h1 class="h-slide ">You'll love it</h1>
+                                    <p>Designer chair styles for every space -
+                                        <span class="fw-bolder">Free
+                                            Shipping</span></p>
+                                    <a class="text-black" href>SHOP NOW</a>
                                 </div>
-                                <div class="first-slide ">
-                                    <span class="text-wrapper line">
-                                        <h1 class="m-0 "><span
-                                                class="letters  ">Chairs &
-                                                Seating</span></h1>
-                                    </span>
-                                </div>
-                                <div class="second-slide  ">
-                                    <span class="text-wrapper line ">
-                                        <h1 class="m-0"><span
-                                                class="letters">You'll
-                                                love</span></h1>
-                                    </span>
-                                </div>
-                                <div class="same-animation mb-3 ">
-                                    <p class="text-wrapper line m-0 ">
-                                        <span class="letters"
-                                            style="color: black;">Designer chair
-                                            styles
-                                            for
-                                            every space - <span>Free
-                                                Shipping</span></span>
-                                    </p>
-                                </div>
-                                <div class="same-animation">
-                                    <a class="text-wrapper line letters"
-                                        href="#"
-                                        style="color: black;"
-                                        aria-label="Shop Now">
-                                        SHOP NOW
-                                    </a>
-                                </div>
+                                <img height="100%"
+                                    src="./assets/images/Home/slide-1-home1-2.png"
+                                    class=" col-md-6 col-12"
+                                    alt="First slide image">
                             </div>
-                            <!-- Image -->
-                            <img class="col-6 object-fit-cover"
-                                src="./assets/images/Home/slide-1-home1-2.png"
-                                alt="Chairs & Seating">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div
+                                class="d-flex align-items-center flex-md-row flex-column gap-2">
+                                <div
+                                    class="text d-flex flex-column align-items-center align-items-md-start justify-content-md-center d-md-flex col-md-6 ">
+                                    <p>SALE OFF 30%</p>
+                                    <h1 class="h-slide letters ">Lamps & Lighting</h1>
+                                    <h1 class="h-slide ">Great Low Prices</h1>
+                                    <p>Free standard shipping <span
+                                            class="fw-bolder">with
+                                            $35</span></p>
+                                    <a class="text-black" href>SHOP NOW</a>
+                                </div>
+                                <img
+                                    src="./assets/images/Home/slide-2-home1-1.png"
+                                    class=" col-md-6 col-12"
+                                    alt="Second slide image">
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div
+                                class="d-flex align-items-center flex-md-row flex-column gap-2">
+                                <div
+                                    class="text d-flex flex-column align-items-center align-items-md-start justify-content-md-center d-md-flex col-md-6 ">
+                                    <p>SALE OFF 25%</p>
+                                    <h1 class="h-slide ">Discover Living</h1>
+                                    <h1 class="h-slide ">Room Tables </h1>
+                                    <p>Free standard shipping <span
+                                            class="fw-bolder">with
+                                            $45</span></p>
+                                    <a class="text-black" href>SHOP NOW</a>
+                                </div>
+                                <img
+                                    src="./assets/images/Home/slide-3-home1-1.png"
+                                    class=" col-md-6 col-12"
+                                    alt="Third slide image">
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="parent d-flex flex-column flex-md-row gap-4">
-                            <div
-                                class="letters-con d-flex flex-column col-lg-6 col-md-6 col-12 justify-content-center ">
-                                <!-- NEW ARRIVAL -->
-                                <div class="same-animation">
-                                    <p class="text-wrapper line  ">
-                                        <span class="letters">NEW ARRIVAL</span>
-                                    </p>
-                                </div>
-                                <div class="first-slide ">
-                                    <span class="text-wrapper line">
-                                        <h1 class="m-0 "><span
-                                                class="letters  ">Chairs &
-                                                Seating</span></h1>
-                                    </span>
-                                </div>
-                                <div class="second-slide  ">
-                                    <span class="text-wrapper line ">
-                                        <h1 class="m-0"><span
-                                                class="letters">You'll
-                                                love</span></h1>
-                                    </span>
-                                </div>
-                                <div class="same-animation mb-3 ">
-                                    <p class="text-wrapper line m-0 ">
-                                        <span class="letters"
-                                            style="color: black;">Designer chair
-                                            styles
-                                            for
-                                            every space - <span>Free
-                                                Shipping</span></span>
-                                    </p>
-                                </div>
-                                <div class="same-animation">
-                                    <a class="text-wrapper line letters"
-                                        href="#"
-                                        style="color: black;"
-                                        aria-label="Shop Now">
-                                        SHOP NOW
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Image -->
-                            <img class="col-6 object-fit-cover"
-                                src="./assets/images/Home/slide-1-home1-2.png"
-                                alt="Chairs & Seating">
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item ">
-                        <div class="parent d-flex flex-column flex-md-row gap-4">
-                            <div
-                                class="letters-con d-flex flex-column col-lg-6 col-md-6 col-12 justify-content-center ">
-                                <!-- NEW ARRIVAL -->
-                                <div class="same-animation">
-                                    <p class="text-wrapper line  ">
-                                        <span class="letters">NEW ARRIVAL</span>
-                                    </p>
-                                </div>
-                                <div class="first-slide ">
-                                    <span class="text-wrapper line">
-                                        <h1 class="m-0 "><span
-                                                class="letters  ">Chairs &
-                                                Seating</span></h1>
-                                    </span>
-                                </div>
-                                <div class="second-slide  ">
-                                    <span class="text-wrapper line ">
-                                        <h1 class="m-0"><span
-                                                class="letters">You'll
-                                                love</span></h1>
-                                    </span>
-                                </div>
-                                <div class="same-animation mb-3 ">
-                                    <p class="text-wrapper line m-0 ">
-                                        <span class="letters"
-                                            style="color: black;">Designer chair
-                                            styles
-                                            for
-                                            every space - <span>Free
-                                                Shipping</span></span>
-                                    </p>
-                                </div>
-                                <div class="same-animation">
-                                    <a class="text-wrapper line letters"
-                                        href="#"
-                                        style="color: black;"
-                                        aria-label="Shop Now">
-                                        SHOP NOW
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Image -->
-                            <img class="col-6 object-fit-cover"
-                                src="./assets/images/Home/slide-1-home1-2.png"
-                                alt="Chairs & Seating">
-                        </div>
+                    <div
+                        class="carousel-indicators position-static m-0 d-flex justify-content-md-start justify-content-center">
+                        <button type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                 </div>
-
             </div>
-            <!-- End carousel -->
+            <!-- End Carousel -->
+
             <!-- End Section One -->
         </div>
         <script
