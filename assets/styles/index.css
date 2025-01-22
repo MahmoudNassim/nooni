@@ -31,6 +31,14 @@
   color: rgba(132, 132, 132, 1);
   text-decoration: underline;
 }
+.about:hover {
+  color: rgba(132, 132, 132, 1);
+  text-decoration: underline;
+}
+.contact:hover {
+  color: rgba(132, 132, 132, 1);
+  text-decoration: underline;
+}
 .carousel-indicators [data-bs-target] {
   width: 20px;
   height: 20px;
@@ -50,13 +58,42 @@
   font-size: 4rem;
   color: black;
 }
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.items .item-info :first-child {
+  margin: 0;
+  font-weight: bold;
+}
+.items img {
+  border-radius: 50%;
+}
+.category-items {
+  overflow-x: auto;
+}
+.img-div .banner-one img {
+  position: absolute;
+}
+.img-div .banner-one{
+  background-image: url("../images/Home/banner-0.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.img-div .banner-two {
+  background-image: url("../images/Home/banner-1.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
 /* Mobile */
 @media screen and (max-width: 767px) {
   .content .left a {
     font-size: 12px;
   }
   .content .left p {
-    font-size: 12px;
+    font-size: 13px;
   }
   .carousel-item img {
     width: 300px;
