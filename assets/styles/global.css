@@ -9,9 +9,7 @@
 body {
   min-height: 100vh;
 }
-p{
+p,h1,h2,h3{
   color: black;
 }
-h3{
-  color: black;
-}
+
