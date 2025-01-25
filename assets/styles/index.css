@@ -109,8 +109,13 @@
   margin: 0;
   font-weight: bold;
 }
-.items img {
-  border-radius: 50%;
+.layer {
+  display: none;
+  background-color: rgba(117, 117, 117, 0.5);
+}
+.items:hover .layer,
+.items:hover svg {
+  display: block !important;
 }
 .category-items {
   overflow-x: auto;
@@ -119,35 +124,36 @@
   position: absolute;
 }
 /* Banners Style */
+.banners-div{
+  height: 120vh;
+}
+.banners{
+  height: 100vh;
+}
 .section-two {
   position: relative;
-  height: 25vh;
   overflow: hidden;
   margin-bottom: 20px;
+  background-color:#FFD5C9;
+  height: 20vh;
 }
 .section-two img {
   position: absolute;
-  top: -3.8rem;
+  top: 0;
   right: 0;
   transition: ease 400ms all;
 }
-.section-two:hover img {
-  top: -1rem;
-}
+
 .banner-one:hover .shop-now::before {
   width: 0%;
   left: 0;
 }
-.banner-one img {
-  transition: ease 400ms all;
-}
+
 .banner-one:hover .shop-now::before {
   width: 0%;
   left: 0;
 }
-.banner-one:hover img {
-  transform: scale(1.1);
-}
+
 .banner-two {
   background-image: url("../images/Home/banner-1.jpg");
   background-repeat: no-repeat;
@@ -163,6 +169,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  background-position-y: center;
 }
 .banner-three p,
 .banner-three h1,
@@ -173,6 +180,7 @@
   width: 0%;
   left: 0;
 }
+
 /* End Banners Style */
 
 /* Mobile */
