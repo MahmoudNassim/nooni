@@ -113,9 +113,13 @@
   display: none;
   background-color: rgba(117, 117, 117, 0.5);
 }
+
 .items:hover .layer,
 .items:hover svg {
   display: block !important;
+}
+.items:hover img {
+  transform: scale(1.1);
 }
 .category-items {
   overflow-x: auto;
@@ -124,17 +128,17 @@
   position: absolute;
 }
 /* Banners Style */
-.banners-div{
+.banners-div {
   height: 120vh;
 }
-.banners{
+.banners {
   height: 100vh;
 }
 .section-two {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
-  background-color:#FFD5C9;
+  background-color: #ffd5c9;
   height: 20vh;
 }
 .section-two img {
@@ -180,8 +184,109 @@
   width: 0%;
   left: 0;
 }
-
 /* End Banners Style */
+/* Start Products Style */
+.cardContainer {
+  height: 60vh;
+  max-height: 500px;
+}
+.card {
+  background-size: cover;
+  height: 80%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  transition: 400ms ease all;
+}
+.cardContainer .icons a {
+  transition: 400ms ease all !important;
+}
+.cardContainer .card:hover .icons a {
+  display: block !important;
+}
+.cardContainer .card-button :hover {
+  color: white !important;
+  background-color: red !important;
+}
+.cardContainer :hover .card-button {
+  display: block !important;
+}
+#chair {
+  background-image: url("../images/Home/Product\ 1.jpg");
+}
+#chair:hover {
+  background-image: url("../images/Home/hover-Product\ 1.jpg");
+}
+#cupboard {
+  background-image: url("../images/Home/Product\ 2.jpg");
+}
+#cupboard:hover {
+  background-image: url("../images/Home/hover-Product\ 2.jpg");
+}
+#bed {
+  background-image: url("../images/Home/Product\ 3.jpg");
+}
+#bed:hover {
+  background-image: url("../images/Home/hover-Product\ 3.jpg");
+}
+#floor-lamp {
+  background-image: url("../images/Home/Product\ 4.jpg");
+}
+#floor-lamp:hover {
+  background-image: url("../images/Home/hover-Product\ 4.jpg");
+}
+#garden-chair {
+  background-image: url("../images/Home/Product\ 5.jpg");
+}
+#garden-chair:hover {
+  background-image: url("../images/Home/hover-Product\ 5.jpg");
+}
+#led-steel {
+  background-image: url("../images/Home/Product\ 6.jpg");
+}
+#led-steel:hover {
+  background-image: url("../images/Home/hover-Product\ 4.jpg");
+}
+#teak-chair {
+  background-image: url("../images/Home/Product\ 7.jpg");
+}
+#teak-chair:hover {
+  background-image: url("../images/Home/hover-Product\ 7.jpg");
+}
+.cardContainer p {
+  margin: 0 !important;
+}
+.cardContainer .card + p {
+  padding-top: 10px;
+}
+.cardContainer div:nth-child(3) {
+  padding-top: 0.25rem;
+}
+.cardContainer .hot {
+  left: 15px;
+  top: 15px;
+  background-color: red;
+}
+.cardContainer .hot p {
+  font-size: 12px;
+}
+.cardContainer .sale {
+  left: 60px;
+  top: 15px;
+}
+.cardContainer .sale p {
+  font-size: 12px;
+}
+/* End Products Style */
+/* Start Blog Style */
+.blog-content .blog-one img {
+  width: 100%;
+}
+.blog-content .blog-two img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+/* End Blog Style */
 
 /* Mobile */
 @media screen and (max-width: 767px) {
@@ -198,6 +303,12 @@
   .h-slide {
     font-size: 2rem;
   }
+  .card {
+    height: 70%;
+  }
+  .cardContainer {
+    height: 50vh;
+  }
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -206,5 +317,11 @@
   }
   .h-slide {
     font-size: 2.5rem;
+  }
+  .card {
+    height: 80%;
+  }
+  .cardContainer {
+    height: 50vh;
   }
 }
