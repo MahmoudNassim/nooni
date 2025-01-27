@@ -93,7 +93,7 @@
   font-size: 4rem;
   color: black;
 }
-
+/* Start Category Style */
 .items {
   display: flex;
   align-items: center;
@@ -111,6 +111,7 @@
 .items:hover .layer,
 .items:hover svg {
   display: block !important;
+  z-index: 1;
 }
 .items:hover img {
   transform: scale(1.1);
@@ -118,9 +119,7 @@
 .category-items {
   overflow-x: auto;
 }
-.img-div .banner-one img {
-  position: absolute;
-}
+/* End Category Style */
 /* Banners Style */
 .cabinets {
   background-image: url("../images/Home/banner-1.jpg");
