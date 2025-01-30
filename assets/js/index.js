@@ -37,7 +37,8 @@
 //     setInterval(shiftItems, 3000);
 // });
 
-let swiper = new Swiper(".mySwiper", {
+// Category Section Swiper
+let categorySwiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 2,
   grabCursor: true,
@@ -46,8 +47,28 @@ let swiper = new Swiper(".mySwiper", {
     992: {
       slidesPerView: 3,
     },
-    993: {
+    1200: {
       slidesPerView: 4,
     },
   },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let blogSwiper = new Swiper(".mySwiper-blog", {
+    loop: true,
+    slidesPerView: 1, // Show one blog post at a time
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1, // On tablets, still 1 post
+      },
+      992: {
+        slidesPerView: 2, // On desktops, show 2 blog posts
+      },
+    },
+  });
 });

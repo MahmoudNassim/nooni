@@ -101,13 +101,62 @@
 }
 
 /* End Category Style */
+/* Start Products */
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.type-category .checkbox p{
+  transition: 0.6s ease all ;
 
+}
+.checkbox:hover  p{
+  color: gray !important;
+}
+.checkbox:hover .checkbox-check {
+  background: black;
+  stroke: #f9f9f9;
+  stroke-linecap: round;
+  stroke-width: 0.15rem; /* Adjusted for smaller size */
+  stroke-dashoffset: 0; /* Make the checkmark visible on hover */
+}
+
+.checkbox-input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-check {
+  background: black;
+  stroke-dashoffset: 0;
+}
+
+.checkbox-check {
+  width: 20px; /* Smaller width */
+  height: 20px; /* Smaller height */
+  border: 0.15rem solid grey; /* Thinner border */
+  stroke: #f9f9f9;
+  stroke-dasharray: 20; /* Adjusted for smaller size */
+  stroke-dashoffset: 20; /* Adjusted for smaller size */
+  stroke-linecap: round;
+  stroke-width: 0.15rem; /* Thinner stroke */
+  border-radius: 0.15rem; /* Smaller border radius */
+  fill: none;
+  transition:
+    background 0.4s,
+    stroke-dashoffset 0.6s;
+}
+/* End Products */
 /* Mobile */
 @media screen and (max-width: 767px) {
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .swiper-slide {
+  .category-items .items {
     width: 33% !important;
   }
 }
