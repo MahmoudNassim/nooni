@@ -109,19 +109,18 @@
   text-align: center;
   cursor: pointer;
 }
-.type-category .checkbox p{
-  transition: 0.6s ease all ;
-
+.products-category .checkbox p {
+  transition: 0.3s ease all;
 }
-.checkbox:hover  p{
+.products-category .checkbox:hover p {
   color: gray !important;
 }
 .checkbox:hover .checkbox-check {
   background: black;
   stroke: #f9f9f9;
   stroke-linecap: round;
-  stroke-width: 0.15rem; /* Adjusted for smaller size */
-  stroke-dashoffset: 0; /* Make the checkmark visible on hover */
+  stroke-width: 0.15rem;
+  stroke-dashoffset: 0;
 }
 
 .checkbox-input {
@@ -136,27 +135,191 @@
 }
 
 .checkbox-check {
-  width: 20px; /* Smaller width */
-  height: 20px; /* Smaller height */
-  border: 0.15rem solid grey; /* Thinner border */
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
   stroke: #f9f9f9;
-  stroke-dasharray: 20; /* Adjusted for smaller size */
-  stroke-dashoffset: 20; /* Adjusted for smaller size */
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
   stroke-linecap: round;
-  stroke-width: 0.15rem; /* Thinner stroke */
-  border-radius: 0.15rem; /* Smaller border radius */
+  stroke-width: 0.15rem;
+  border-radius: 0.15rem;
   fill: none;
-  transition:
-    background 0.4s,
-    stroke-dashoffset 0.6s;
+}
+
+.cardContainer {
+  height: 60vh;
+  max-height: 500px;
+}
+.card {
+  background-size: cover;
+  height: 80%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  transition: 400ms ease all;
+}
+.cardContainer .icons a {
+  transition: 400ms ease all !important;
+}
+.cardContainer .card:hover .icons a {
+  display: block !important;
+}
+.cardContainer .card-button :hover {
+  color: white !important;
+  background-color: red !important;
+}
+.cardContainer :hover .card-button {
+  display: block !important;
+}
+.cardContainer .card-button a {
+  cursor: pointer;
+}
+#chair {
+  background-image: url("../images/Home/Product\ 1.jpg");
+}
+#chair:hover {
+  background-image: url("../images/Home/hover-Product\ 1.jpg");
+}
+#cupboard {
+  background-image: url("../images/Home/Product\ 2.jpg");
+}
+#cupboard:hover {
+  background-image: url("../images/Home/hover-Product\ 2.jpg");
+}
+#bed {
+  background-image: url("../images/Home/Product\ 3.jpg");
+}
+#bed:hover {
+  background-image: url("../images/Home/hover-Product\ 3.jpg");
+}
+#floor-lamp {
+  background-image: url("../images/Home/Product\ 4.jpg");
+}
+#floor-lamp:hover {
+  background-image: url("../images/Home/hover-Product\ 4.jpg");
+}
+#garden-chair {
+  background-image: url("../images/Home/Product\ 5.jpg");
+}
+#garden-chair:hover {
+  background-image: url("../images/Home/hover-Product\ 5.jpg");
+}
+#led-steel {
+  background-image: url("../images/Home/Product\ 6.jpg");
+}
+#led-steel:hover {
+  background-image: url("../images/Home/hover-Product\ 4.jpg");
+}
+#teak-chair {
+  background-image: url("../images/Home/Product\ 7.jpg");
+}
+#teak-chair:hover {
+  background-image: url("../images/Home/hover-Product\ 7.jpg");
+}
+#metal-table {
+  background-image: url("../images/Metal-table.jpg");
+}
+#metal-table:hover {
+  background-image: url("../images/hover-Metal-table.jpg");
+}
+#sofa {
+  background-image: url("../images/sofa.jpg");
+}
+#sofa:hover {
+  background-image: url("../images/hover-Sofa.jpg");
+}
+#led {
+  background-image: url("../images/led-steel.jpg");
+}
+#led:hover {
+  background-image: url("../images/hover-led-steel.jpg");
+}
+#bar-cabinet {
+  background-image: url("../images/Bar-Cabinet.jpg");
+}
+#bar-cabinet:hover {
+  background-image: url("../images/hover-Bar-Cabinet.jpg");
+}
+#wooden-table {
+  background-image: url("../images/wooden-table.jpg");
+}
+#wooden-table:hover {
+  background-image: url("../images/hover-wooden-table.jpg");
+}
+#sofaBumber {
+  background-image: url("../images/hover-Sofa.jpg");
+}
+#sofaBumber:hover {
+  background-image: url("../images/sofa.jpg");
+}
+#whitewash-cane {
+  background-image: url("../images/Whitewash-Cane.jpg");
+}
+#whitewash-cane:hover {
+  background-image: url("../images/hover-Whitewash-Cane.jpg");
+}
+#living {
+  background-image: url("../images/living.jpg");
+}
+#living:hover {
+  background-image: url("../images/hover-Sofa.jpg");
+}
+.cardContainer p {
+  margin: 0 !important;
+}
+.cardContainer .card + p {
+  padding-top: 10px;
+}
+
+.cardContainer .hot {
+  left: 15px;
+  top: 15px;
+  background-color: red;
+}
+.cardContainer .hot p {
+  font-size: 12px;
+}
+.cardContainer .sale {
+  left: 60px;
+  top: 15px;
+}
+.cardContainer .sale p {
+  font-size: 12px;
+}
+.numbers div p {
+  transition: 400ms ease all;
+}
+.numbers div:hover p {
+  color: white;
+}
+.numbers div {
+  background-color: #eeeeee;
+  transition: 400ms ease all;
+  cursor: pointer;
+}
+.numbers div:hover {
+  background-color: black;
 }
 /* End Products */
 /* Mobile */
 @media screen and (max-width: 767px) {
+  .card {
+    height: 70%;
+  }
+  .cardContainer {
+    height: 50vh;
+  }
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .category-items .items {
     width: 33% !important;
+  }
+  .labels label p {
+    font-size: 12px !important;
+  }
+  .card {
+    height: 80%;
   }
 }
