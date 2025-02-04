@@ -148,6 +148,10 @@
 }
 .second-image .img-con .layer button {
   transition: 400ms ease all;
+  letter-spacing: 0.1em;
+  FONT-SIZE: 0.9rem !important;
+  font-weight: bold;
+  padding: 12px 20px !important;
 }
 .second-image .img-con .layer button:hover {
   background-color: red !important;
@@ -178,11 +182,19 @@
   .first-image-div {
     height: 250px;
   }
+  /* Second Image */
+  .second-image .img-con{
+    height: 400px;
+  }
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* FIRST IMAGE */
   .first-image-div {
-    height: 250px;
+    height: 360px;
   }
+    /* Second Image */
+    .second-image .img-con{
+      height: 360px;
+    }
 }
